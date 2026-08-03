@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bepul dars — Zamira Russian</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://pub-5af07f214f1445b69e44c9a82716a9e0.r2.dev" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<!-- ============================================= -->
+<!-- META PIXEL — bu yerga o'zingizning Pixel ID'ingizni qo'ying -->
+<!-- ============================================= -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', 'YOUR_PIXEL_ID_HERE'); // <-- shu yerga Pixel ID
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID_HERE&ev=PageView&noscript=1"
+/></noscript>
+<!-- ============================================= -->
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --primary:#2563EB;
+  --primary-hover:#1D4ED8;
+  --bg:#FFFFFF;
+  --section-bg:#F8FAFC;
+  --light-blue:#EFF6FF;
+  --text:#111827;
+  --text-secondary:#6B7280;
+  --border:#E5E7EB;
+  --success:#22C55E;
+  --radius:16px;
+}
+body{font-family:'Inter',sans-serif;background:var(--section-bg);color:var(--text);font-size:16px;line-height:1.6}
+
+nav{background:var(--bg);border-bottom:1px solid var(--border);padding:14px 20px;display:flex;align-items:center;justify-content:center}
+.nav-brand{font-size:18px;font-weight:800;color:var(--text);display:flex;align-items:center;gap:8px}
+.nav-logo{width:30px;height:30px;border-radius:9px;background:var(--primary);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.nav-logo::before{content:'';width:14px;height:14px;background:
+  linear-gradient(#fff,#fff) 0 0/6px 6px no-repeat,
+  linear-gradient(#fff,#fff) 8px 0/6px 6px no-repeat,
+  linear-gradient(#fff,#fff) 0 8px/6px 6px no-repeat,
+  linear-gradient(#fff,#fff) 8px 8px/6px 6px no-repeat;
+  opacity:.95}
+
+.wrap{max-width:760px;margin:0 auto;padding:40px 20px 80px}
+
+.hero-text{text-align:center;margin-bottom:28px}
+.tag{display:inline-block;background:var(--light-blue);color:var(--primary);padding:5px 14px;border-radius:30px;font-size:12px;font-weight:800;letter-spacing:0.5px;margin-bottom:14px}
+h1{font-size:clamp(22px,5vw,30px);font-weight:900;margin-bottom:10px;color:var(--text)}
+.subtitle{color:var(--text-secondary);font-size:15px;font-weight:500;max-width:520px;margin:0 auto}
+
+/* VIDEO */
+.video-wrap{background:#000;border-radius:var(--radius);overflow:hidden;box-shadow:0 8px 30px rgba(17,24,39,0.12);margin-bottom:20px;position:relative}
+video{width:100%;display:block;aspect-ratio:16/9;background:#000}
+
+.progress-hint{text-align:center;font-size:13px;color:var(--text-secondary);font-weight:600;margin-bottom:36px}
+.progress-hint span{color:var(--primary);font-weight:800}
+
+/* CTA — dastlab yashirin */
+.cta-box{max-width:520px;margin:0 auto;background:var(--bg);border:1px solid var(--border);border-radius:var(--radius);padding:28px 26px;text-align:center;box-shadow:0 4px 20px rgba(17,24,39,0.06);
+  opacity:0;transform:translateY(16px) scale(.97);pointer-events:none;transition:opacity .5s ease,transform .5s ease}
+.cta-box.visible{opacity:1;transform:translateY(0) scale(1);pointer-events:auto}
+.cta-icon{font-size:34px;margin-bottom:10px;display:block}
+.cta-title{font-size:19px;font-weight:900;margin-bottom:8px;color:var(--text)}
+.cta-desc{font-size:14px;color:var(--text-secondary);font-weight:500;margin-bottom:18px}
+
+/* BONUSLAR */
+.bonus-list{text-align:left;background:var(--light-blue);border-radius:12px;padding:16px 16px 14px;margin-bottom:20px}
+.bonus-head{font-size:12px;font-weight:800;color:var(--primary);letter-spacing:.5px;margin-bottom:10px}
+.bonus-item{display:flex;align-items:flex-start;gap:9px;font-size:14px;font-weight:600;color:var(--text);margin-bottom:9px;line-height:1.45}
+.bonus-item:last-child{margin-bottom:0}
+.bonus-check{width:19px;height:19px;border-radius:50%;background:var(--success);color:#fff;font-size:11px;font-weight:900;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px}
+
+.cta-btn{display:inline-block;background:var(--primary);color:#fff;padding:16px 32px;border-radius:12px;font-size:16px;font-weight:800;text-decoration:none;box-shadow:0 8px 24px rgba(37,99,235,0.3);transition:transform .15s,background .15s}
+.cta-btn:hover{background:var(--primary-hover);transform:translateY(-2px)}
+.cta-note{font-size:12px;color:var(--text-secondary);font-weight:600;margin-top:12px}
+
+@keyframes ctaPulse{0%,100%{box-shadow:0 8px 24px rgba(37,99,235,0.3)}50%{box-shadow:0 10px 34px rgba(37,99,235,0.5)}}
+.cta-box.visible .cta-btn{animation:ctaPulse 2.2s ease-in-out infinite}
+
+@media(max-width:480px){
+  .wrap{padding:28px 16px 60px}
+  .cta-box{padding:22px 18px}
+  .cta-btn{width:100%;padding:16px 20px}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <span class="nav-brand"><span class="nav-logo"></span> Zamira Russian</span>
+</nav>
+
+<div class="wrap">
+
+  <div class="hero-text">
+    <div class="tag">BEPUL DARS</div>
+    <h1>Rus tilida gapirishni shu darsdan boshlang</h1>
+    <p class="subtitle">Videoni to'liq tomosha qiling — dars oxirida dasturga bonuslar bilan yozilish taklifi ochiladi.</p>
+  </div>
+
+  <div class="video-wrap">
+    <video id="leadVideo" controls playsinline preload="metadata">
+      <source src="https://pub-5af07f214f1445b69e44c9a82716a9e0.r2.dev/dars.mp4" type="video/mp4">
+      Brauzeringiz video formatini qo'llab-quvvatlamaydi.
+    </video>
+  </div>
+
+  <p class="progress-hint">Bonusli taklif <span id="countdownText">25:20</span> dan keyin ochiladi</p>
+
+  <div class="cta-box" id="ctaBox">
+    <span class="cta-icon">🎁</span>
+    <div class="cta-title">Dasturga bonuslar bilan yoziling</div>
+    <div class="cta-desc">Faqat shu darsni ko'rganlar uchun — quyidagi bonuslar sovg'a qilinadi.</div>
+
+    <div class="bonus-list">
+      <div class="bonus-head">SIZGA SOVG'A</div>
+      <div class="bonus-item"><span class="bonus-check">✓</span><span>Bonus 1 — matnni shu yerdan o'zgartiring</span></div>
+      <div class="bonus-item"><span class="bonus-check">✓</span><span>Bonus 2 — matnni shu yerdan o'zgartiring</span></div>
+      <div class="bonus-item"><span class="bonus-check">✓</span><span>Bonus 3 — matnni shu yerdan o'zgartiring</span></div>
+    </div>
+
+    <a href="https://t.me/zamira_turganbaeva" target="_blank" class="cta-btn" id="ctaBtn">Dasturga yozilish →</a>
+    <div class="cta-note">Joylar soni cheklangan</div>
+  </div>
+
+</div>
+
+<script>
+/* ============================================= */
+/* SOZLAMALAR — shu yerdan tez o'zgartirish mumkin */
+/* ============================================= */
+const CONFIG = {
+  revealAfterSeconds: 1520,    // sahifa ochilganidan necha soniyadan keyin chiqsin (1520 = 25:20)
+  revealAtVideoTime: 1520,     // video necha soniyasida chiqsin (1520 = 25:20)
+  buttonUrl: 'https://t.me/zamira_turganbaeva', // <-- yozilish havolasi shu yerga
+};
+/* ============================================= */
+
+const ctaBox = document.getElementById('ctaBox');
+const ctaBtn = document.getElementById('ctaBtn');
+const video = document.getElementById('leadVideo');
+const countdownText = document.getElementById('countdownText');
+
+ctaBtn.href = CONFIG.buttonUrl;
+
+// Countdown boshlang'ich qiymati CONFIG'dan olinadi
+(function initCountdown(){
+  const mm = String(Math.floor(CONFIG.revealAfterSeconds / 60)).padStart(2,'0');
+  const ss = String(CONFIG.revealAfterSeconds % 60).padStart(2,'0');
+  countdownText.textContent = mm + ':' + ss;
+})();
+
+let revealed = false;
+function revealCta(source){
+  if(revealed) return;
+  revealed = true;
+  ctaBox.classList.add('visible');
+  ctaBox.scrollIntoView({behavior:'smooth', block:'center'});
+  if(typeof fbq === 'function'){
+    fbq('track', 'Lead', {content_name: 'lead_magnet_button_shown', source: source});
+  }
+}
+
+// 1) Sahifa taymeri bo'yicha (foydalanuvchi sahifada necha soniya turgani)
+let pageSeconds = 0;
+const pageTimer = setInterval(() => {
+  pageSeconds++;
+  const remain = Math.max(CONFIG.revealAfterSeconds - pageSeconds, 0);
+  const mm = String(Math.floor(remain / 60)).padStart(2,'0');
+  const ss = String(remain % 60).padStart(2,'0');
+  countdownText.textContent = mm + ':' + ss;
+  if(pageSeconds >= CONFIG.revealAfterSeconds){
+    revealCta('page_timer');
+    clearInterval(pageTimer);
+  }
+}, 1000);
+
+// 2) Video vaqti bo'yicha (video shu soniyaga yetganda)
+video.addEventListener('timeupdate', () => {
+  if(video.currentTime >= CONFIG.revealAtVideoTime){
+    revealCta('video_time');
+  }
+});
+
+// Knopka bosilganda Meta Pixel'ga "Contact" hodisasi yuboriladi
+ctaBtn.addEventListener('click', () => {
+  if(typeof fbq === 'function'){
+    fbq('track', 'Contact');
+  }
+});
+</script>
+</body>
+</html>
